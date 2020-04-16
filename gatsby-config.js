@@ -20,6 +20,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `quicksand\:300,400,400i,700`,
+
+        ],
+        display: 'swap'
+      }
+    },
+    {
+      plugins: ['gatsby-theme-overreacted-toggle'],
+  },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
